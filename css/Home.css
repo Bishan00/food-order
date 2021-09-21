@@ -1,0 +1,490 @@
+ #header{
+    background-color: rgb(232, 235, 236);
+    height: 145px;
+    background-image: linear-gradient(rgba(220, 247, 203, 0.7),rgba(208, 240, 195, 0.7)),url(images.jpg);
+  
+  }
+ 
+  @media screen and (max-width:250px) {
+    header {
+       height: 100px;
+    }
+  }
+  nav{
+    display: flex;
+    padding: 0% 1% ;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  /* #navbar navbar-light{
+    height: 2px;
+    width: 3;
+  }
+   */
+  
+  nav img{
+    width: 250px;
+   padding-left: 100px;
+   
+   
+  
+  }
+  #nav-links{
+    flex: 1;
+    text-align:right;
+    top: 40px;
+  
+  }
+  /* link */
+  #nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 16px 4px;
+    position: relative;
+    
+    margin: 5px;
+  }
+  #nav-links ul li a{
+    color: rgb(19, 21, 20);
+    text-decoration: none;
+  }
+  /* link click style */
+  #nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(63, 73, 73);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  #nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  
+  header .carousel-inner .item {
+      height: 100vh;
+  }
+  
+  
+  .banner {
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      position: relative;
+      
+     
+  }
+  .carousel-caption {
+      padding-bottom: 250px;
+      font-family: poppins;
+  }
+  .carousel-caption h2 {
+      font-size: 70px;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  .carousel-caption h2 span {
+      color: #EDBB00;
+  }
+  .carousel-caption a{
+    background: #EDBB00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+
+  .carousel-control.right {
+      background-image: none;
+  }
+  .carousel-control.left {
+      background-image: none;
+  }
+  .carousel-indicators .active {
+      background-color: #EDBB00;
+      border-color: #EDBB00;
+  }
+  /*responsive css*/
+  
+  @media only screen and (min-width: 768px) and (max-width: 990px) {
+      .carousel-caption {
+          padding-bottom: 350px;
+      }
+      .carousel-caption h2 {
+          font-size: 50px;
+      }
+  }
+  @media only screen and (max-width: 767px) {
+      .navbar-inverse .navbar-brand {
+          font-size: 30px;
+          padding: 20px 15px;
+      }
+      .navbar-collapse {
+          background: rgba(0, 0, 0, 0.5);
+      }
+      .carousel-caption {
+          padding-bottom: 120px;
+      }
+      .carousel-caption h2 {
+          font-size: 25px;
+      }
+      .carousel-caption h3 {
+          font-size: 18px;
+      }
+      .carousel-caption a {
+          padding: 10px 25px;
+      }
+  }
+
+  /* CSS for Food SEarch Section */
+
+  .food-search{
+   
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    text-align: center;
+   
+    
+} 
+
+.food-search input[type="search"]{
+  
+    
+    font-size: 18px;
+	color:black;
+    border: none;
+    border-radius: 5px;
+    margin-right:500px;
+    
+   
+}
+#ser{
+    text-align: center;
+    padding-left: 10%;
+}
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+    border-radius: 15px;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+    
+}
+/* eXPLORE fOODS */
+#row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#entry-col{
+    flex-basis: 31%;
+    
+    background: rgb(209, 208, 208);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+#entry-col p{
+    color: black;
+}
+#entry-col:hover{
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+}
+
+#Food{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top:10%;
+} 
+#Food h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(80, 155, 84);
+} 
+#Food p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+
+}
+#Food-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px ;
+    position: relative;
+    overflow:hidden;
+
+}
+#Food-col img{
+    width: 100%;
+}
+#layer{
+    background: transparent;
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 00.5s;
+} 
+#layer:hover{
+    background: rgba(55, 56, 59, 0.7);
+
+}
+#layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: cornsilk;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+#layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    
+}
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: rgb(179, 190, 170);
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+   
+}
+.social ul li{
+    display: inline;
+    padding: 17%;
+    text-align: center;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
